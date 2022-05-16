@@ -1,0 +1,9 @@
+<%= form_with url: '/dashboard/locations', method: :post, local: true do |form| %>
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+  <%= form.label :state %>
+  <%= form.text_field :state %>
+  <%= form.label :country %>
+  <%= form.text_field :country %>
+  <%= form.submit "Create Location" %>
+<% end  %>
