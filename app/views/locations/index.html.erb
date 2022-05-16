@@ -1,0 +1,7 @@
+<h3><%= "All Locations" %></h3>
+
+<% @locations.each do |location| %>
+  <h3>name: <%= location.city %></h3> 
+  <p>category: <%= location.state %></p>
+  <p>quantity: <%= location.country %></p>
+<% end %>
