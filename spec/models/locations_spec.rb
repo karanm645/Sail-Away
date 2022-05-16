@@ -9,6 +9,6 @@ RSpec.describe Location do
 
   describe 'relations' do 
     it { should have_many :item_locations }
-    it { should have_many (:items).through(:item_locations)}
+    it { should have_many(:items).through(:item_locations)}
   end 
 end 
