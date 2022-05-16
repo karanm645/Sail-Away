@@ -14,5 +14,12 @@ RSpec.describe 'items index page' do
       expect(page).to have_content(@tungsten_bracelet.category)
       expect(page).to have_content(@givenchy.quantity)
     end 
+
+    it 'has a link to delete the Item' do
+      click_link "Delete #{@ferrari.name}"
+
+      expect(current_path).to eq("/dashboard/items")
+      expect(page).to_not have_content(@ferrari.name)
+    end
   end 
 end 
