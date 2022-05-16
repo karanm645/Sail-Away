@@ -1,0 +1,9 @@
+<%= form_with url: '/dashboard/locations/items', method: :post, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :category %>
+  <%= form.text_field :category %>
+  <%= form.label :quantity %>
+  <%= form.text_field :quantity %>
+  <%= form.submit "Create Item" %>
+<% end  %>

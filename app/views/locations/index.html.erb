@@ -1,4 +1,5 @@
 <h3><%= "All Locations" %></h3>
+<p><%= button_to "New Location", "/dashboard/locations/new", method: :get %></p>
 
 <% @locations.each do |location| %>
   <h3>name: <%= location.city %></h3> 

@@ -10,4 +10,11 @@ Rails.application.routes.draw do
   patch "/dashboard/items/:id", to: 'items#update'
 
   get "/dashboard/locations", to: 'locations#index'
+  get "/dashboard/locations/new", to: 'locations#new'
+  post "/dashboard/locations", to: 'locations#create'
+  
+  get "/dashboard/locations/:location_id/items", to: 'location_items#index'
+  get "/dashboard/locations/items", to: 'location_items#index'
+  get "/dashboard/locations/:location_id/items/new", to: 'location_items#new'
+  post "/dashboard/locations/items", to: 'location_items#create'
 end
