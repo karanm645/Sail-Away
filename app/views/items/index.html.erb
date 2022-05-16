@@ -1,0 +1,7 @@
+<%= "Here are all the Items" %>
+
+<% @items.each do |item| %>
+  <p>name: <%= item.name %></p>
+  <p>category: <%= item.category %></p>
+  <p>quantity: <%= item.quantity %></p>
+<% end  %>
