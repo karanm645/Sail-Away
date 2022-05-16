@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   delete "/dashboard/items/:id", to: 'items#destroy'
   get "/dashboard/items/:id/edit", to: 'items#edit'
   patch "/dashboard/items/:id", to: 'items#update'
+
+  get "/dashboard/locations", to: 'locations#index'
 end

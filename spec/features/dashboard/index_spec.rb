@@ -12,5 +12,9 @@ RSpec.describe 'dashboard' do
     it 'has a link to items index page' do
       expect(page).to have_link("view all items")
     end 
+
+    it 'has a link to locations index page' do
+      expect(page).to have_link("view all locations")
+    end 
   end 
 end 
