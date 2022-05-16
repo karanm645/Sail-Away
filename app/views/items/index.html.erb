@@ -4,7 +4,7 @@
 <h3><%= "All Items" %></h3>
 
 <% @items.each do |item| %>
-  <p>name: <%= item.name %></p>
+  <h3>name: <%= item.name %></h3> <%= link_to "Delete #{item.name}", "/dashboard/items/#{item.id}", method: :delete %>
   <p>category: <%= item.category %></p>
   <p>quantity: <%= item.quantity %></p>
 <% end  %>
