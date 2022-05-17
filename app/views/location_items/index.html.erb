@@ -1,5 +1,12 @@
-<% @items.each do |item| %>
-  <h3>name: <%= item.name %></h3> 
-  <p>category: <%= item.category %></p>
-  <p>quantity: <%= item.quantity %></p>
+<p><%= button_to "New Item", "/dashboard/locations/new", method: :get %></p>
+
+<% @locations.each do |location| %>
+
+  <h3><%= location.city %>'s Inventory</h3>
+  <% location.items.each do |item| %>
+    <h4>Item Name: <%= item.name %></h4>
+    <p>Item Category: <%= item.category %></p>
+    <p>Amount of items: <%= item.quantity %></p>
+  <% end %>
 <% end %>
+

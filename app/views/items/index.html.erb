@@ -1,11 +1,11 @@
-<h3><%= "Create New Item" %></h3>
-<p><%= button_to "New Item", "/dashboard/items/new", method: :get %></p>
+<h1> Items Page </h1>
+<p><%= button_to "Create New Item", "/dashboard/items/new", method: :get %></p>
 
-<h3><%= "All Items" %></h3>
+<h2><%= "All Items" %></h2>
 
 <% @items.each do |item| %>
-  <h3>name: <%= item.name %></h3> 
+  <h3><%= item.name %></h3> 
   <p>category: <%= item.category %></p>
   <p>quantity: <%= item.quantity %></p>
-  <p><%= link_to "Delete #{item.name}", "/dashboard/items/#{item.id}", method: :delete %>, <%= link_to "Update #{item.name}", "/dashboard/items/#{item.id}/edit" %></p>
+  <p><%= link_to "Delete #{item.name}", "/dashboard/items/#{item.id}", method: :delete %> | <%= link_to "Update #{item.name}", "/dashboard/items/#{item.id}/edit" %></p>
 <% end  %>

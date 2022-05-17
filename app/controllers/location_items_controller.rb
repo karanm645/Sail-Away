@@ -1,15 +1,19 @@
 class LocationItemsController < ApplicationController
   def index
-    @items = Item.all
+    @locations = Location.all
+    # binding.pry
+    # @items = @locations.items.all
   end
   
   def new 
-
+    @location = Location.find(params[:location_id])
   end 
 
   def create 
-    item_location = Item.create!(item_params)
-    redirect_to '/dashboard/locations/items'
+    location = Location.find(params[:location_id])
+    item = location.items.create!(item_params)
+    
+    redirect_to "/dashboard/locations/#{location.id}/items"
   end 
 
 private

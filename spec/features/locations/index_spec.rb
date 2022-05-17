@@ -10,6 +10,8 @@ RSpec.describe 'locations index page' do
 
   describe 'when i visit /dashboard/locations' do 
     it 'has a list of all the locations' do 
+    
+
       expect(page).to have_content(@chicago.city)
       expect(page).to have_content(@sf.state)
       expect(page).to have_content(@dallas.country)
