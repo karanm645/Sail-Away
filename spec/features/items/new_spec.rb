@@ -15,7 +15,7 @@ RSpec.describe "item creation" do
 
     it 'can fill out a form' do 
       visit "/dashboard/items"
-      click_button 'New Item'
+      click_button 'Create New Item'
       
       visit "/dashboard/items/new"
       

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  get "/dashboard", to: 'dashboard#index'
-  
+  resources :dashboard, only: [:index] do 
+  end
+
+  ### convert to resources
   get "/dashboard/items", to: 'items#index'
   get "/dashboard/items/new", to: 'items#new'
   post "/dashboard/items", to: 'items#create'
@@ -14,7 +16,6 @@ Rails.application.routes.draw do
   post "/dashboard/locations", to: 'locations#create'
   
   get "/dashboard/locations/:location_id/items", to: 'location_items#index'
-  get "/dashboard/locations/items", to: 'location_items#index'
   get "/dashboard/locations/:location_id/items/new", to: 'location_items#new'
-  post "/dashboard/locations/items", to: 'location_items#create'
+  post "/dashboard/locations/:location_id/items", to: 'location_items#create'
 end

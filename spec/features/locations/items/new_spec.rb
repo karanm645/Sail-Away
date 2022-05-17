@@ -15,7 +15,7 @@ RSpec.describe "location creation" do
       expect(current_path).to eq("/dashboard/locations")
       expect(page).to have_button('New Location')
     end 
-
+    
     it 'can fill out a form' do 
       visit "/dashboard/locations"
       click_button 'New Location'
@@ -26,21 +26,21 @@ RSpec.describe "location creation" do
       fill_in(:state, with: 'Texas')
       fill_in(:country, with: "US")
       click_button('Create Location')
-
+      
       expect(current_path).to eq("/dashboard/locations")
     end 
-
-    it 'has a form to create a new seed' do 
+    
+    it 'has a form to create a new item' do 
       visit "/dashboard/locations/#{@chicago.id}/items/new"
-
+      
       fill_in(:name, with: 'Lambo')
       fill_in(:category, with: 'Cars')
       fill_in(:quantity, with: 122)
       click_button('Create Item')
-
-      expect(current_path).to eq("/dashboard/locations/items")
-
+      
       visit "/dashboard/locations/#{@chicago.id}/items"
+      expect(current_path).to eq("/dashboard/locations/#{@chicago.id}/items")
+
       expect(page).to have_content("Lambo")
     end 
   end 

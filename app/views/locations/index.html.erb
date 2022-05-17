@@ -2,7 +2,7 @@
 <p><%= button_to "New Location", "/dashboard/locations/new", method: :get %></p>
 
 <% @locations.each do |location| %>
-  <h3>name: <%= location.city %></h3> 
-  <p>category: <%= location.state %></p>
-  <p>quantity: <%= location.country %></p>
+  <h3><%= location.city %></h3> 
+  <p>State: <%= location.state %></p>
+  <p>Country: <%= location.country %></p>
 <% end %>

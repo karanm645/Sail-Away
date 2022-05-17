@@ -1,4 +1,4 @@
-<%= form_with url: '/dashboard/locations/items', method: :post, local: true do |form| %>
+<%= form_with url: "/dashboard/locations/#{@location.id}/items", method: :post, local: true do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name %>
   <%= form.label :category %>
