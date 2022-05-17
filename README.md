@@ -13,7 +13,7 @@ Sail Away is an inventory tracking web-application for companies to track and cr
 ## Workflow
 I used a trello board to keep track of my sprints and how many cards I think I can tackle per day. For full board access you can click on the link below!
 https://trello.com/b/oyHLzoxF/agile-board
-<img width="914" alt="image" src="https://user-images.githubusercontent.com/79548116/168725366-3679d221-5e97-40fa-9785-87ffca165201.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/79548116/168725366-3679d221-5e97-40fa-9785-87ffca165201.png">
 
 
 ## Database Schema
