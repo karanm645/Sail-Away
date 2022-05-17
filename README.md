@@ -1,5 +1,5 @@
 # Sail Away
-Sail Away is an inventory tracking web-application for companies to track and create items and assign them to their appropriate locations.
+Sail Away is an inventory tracking web-application for companies to track and create items and assign them to their appropriate city locations.
 
 ### Gems Utilized
 - rspec
