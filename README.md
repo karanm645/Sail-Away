@@ -1,24 +1,23 @@
-# README
+# Sail Away
+Sail Away is a web-application for logistic companies to track and create items according to the location.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Gems Utilized
+- rspec
+- pry
+- simplecov
+- capybara
+- launchy
+- orderly
+- shoulda-matchers
 
-Things you may want to cover:
+## Database Schema
 
-* Ruby version
+## Local Setup
 
-* System dependencies
+1. Fork and Clone the repo
+2. Install gem packages: `bundle install`
+3. Setup the database: `rails db:create`
+4. Run migrations: ` rails db:migrate`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Running the tests
+Run `bundle exec rspec` to run the test suite
